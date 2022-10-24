@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_taskes/secreens/Home.dart';
+import 'package:flutter_taskes/secreens/instaProfil.dart';
 import 'package:flutter_taskes/secreens/task1.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'taskes',
     debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
-      home:  Home(),
+      home:  instaProfil(),
     );
   }
 }
