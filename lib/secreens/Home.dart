@@ -25,6 +25,9 @@ class _HomeState extends State<Home> {
         child: ListView(
           children: [
             UserAccountsDrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.green
+              ),
               accountName: Text("WAEL"),
               accountEmail: Text("w@example.com"),
             ),

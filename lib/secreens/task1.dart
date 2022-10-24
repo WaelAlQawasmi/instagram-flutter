@@ -7,6 +7,7 @@ class task1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.green,
         leading: Icon(Icons.menu),
         actions: [
           IconButton(
@@ -34,8 +35,8 @@ class task1 extends StatelessWidget {
                 style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold, color: Colors.white),
               ),
               decoration: BoxDecoration(
-                  color: Colors.blue,
-                  border: Border.all(color: Colors.black87, width: 2)),
+                  color: Colors.greenAccent,
+                  border: Border.all(color: Colors.black12, width: 2)),
               width: double.maxFinite,
               height: 40,
             ),
