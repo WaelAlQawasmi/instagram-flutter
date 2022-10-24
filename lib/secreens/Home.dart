@@ -48,7 +48,7 @@ class _HomeState extends State<Home> {
               children: [Icon(Icons.star)],
             ),
             Image.network(
-                "https://merriam-webster.com/assets/mw/images/article/art-wap-article-main/can-task-be-a-verb-5813-7075c71d8cf734c3c83e9edf76bc66fb@1x.jpg")
+                "https://merriam-webster.com/assets/mw/images/article/art-wap-article-main/can-task-be-a-verb-5813-7075c71d8cf734c3c83e9edf76bc66fb@1x.jpg",fit: BoxFit.cover,)
           ],
         ),
       ),
