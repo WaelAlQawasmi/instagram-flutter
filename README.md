@@ -1,5 +1,6 @@
 # flutter_taskes
-
+![home](/assest/img/home.png)
+![home](/assest/img/task1.png)
 A new Flutter project.
 
 ## Getting Started
