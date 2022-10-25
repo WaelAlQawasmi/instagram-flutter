@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_taskes/secreens/instaProfil.dart';
+import 'package:flutter_taskes/secreens/instaHomePage.dart';
 import 'package:flutter_taskes/secreens/task1.dart';
 
 class Home extends StatefulWidget {
@@ -34,7 +34,7 @@ class _HomeState extends State<Home> {
             ),
             TaskNavagertor(context, "Task1", task1()),
 
-            TaskNavagertor(context, "instaProfil", instaProfil())
+            TaskNavagertor(context, "instaProfil", instaHomePage())
           ],
         ),
       ),

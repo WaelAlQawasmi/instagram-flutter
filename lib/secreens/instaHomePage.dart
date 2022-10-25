@@ -1,24 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_taskes/secreens/instaProfile.dart';
 
-class instaProfil extends StatefulWidget {
-  const instaProfil({Key? key}) : super(key: key);
+class instaHomePage extends StatefulWidget {
+  const instaHomePage({Key? key}) : super(key: key);
 
   @override
-  State<instaProfil> createState() => _instaProfilState();
+  State<instaHomePage> createState() => _instaHomePageState();
 }
 
-class _instaProfilState extends State<instaProfil> {
+class _instaHomePageState extends State<instaHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return instaProfile();
+              }));
+            },
             icon: Icon(Icons.person),
             color: Colors.black87,
           )
         ],
+
+
         backgroundColor: Colors.white,
         title: Text(
           "instagrame 8t",
