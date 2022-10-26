@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_taskes/secreens/Home.dart';
 import 'package:flutter_taskes/secreens/instaHomePage.dart';
+import 'package:flutter_taskes/secreens/login.dart';
 import 'package:flutter_taskes/secreens/task1.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'taskes',
     debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
-      home:  instaHomePage(),
+      home:  Login(),
     );
   }
 }
