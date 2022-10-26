@@ -68,7 +68,8 @@ flutter:
      - assest/img/IMG.jpg
      - assest/img/IMG1.jpg
      - assest/img/IMG2.jpg
-
+     - assest/img/insta.jpg
+     - assest/img/instalogo.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
