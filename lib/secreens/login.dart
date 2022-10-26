@@ -44,9 +44,13 @@ class _LoginState extends State<Login> {
                   hintText: "password"),
             ),
           ),
-          Container(margin: EdgeInsets.only(bottom: 20),
-
-              child: Text("forget password" ,style: TextStyle(color: Color(0Xffff4874),)),),
+          Container(
+            margin: EdgeInsets.only(bottom: 20),
+            child: Text("forget password",
+                style: TextStyle(
+                  color: Color(0Xffff4874),
+                )),
+          ),
           Container(
             width: 150,
             child: OutlinedButton(
@@ -55,49 +59,30 @@ class _LoginState extends State<Login> {
                   return instaHomePage();
                 }));
               },
-              child: Text("Login" ,style: TextStyle(color: Color(0Xffff4874)),),
-
-    style: ButtonStyle(
-
-      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-
-            RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(18.0),
-    side: BorderSide(width: .5, color: Color(0Xffff4874)))
-
-
-
-    ),
-
-
-              ),),
+              child: Text(
+                "Login",
+                style: TextStyle(color: Color(0Xffff4874)),
+              ),
+              style: ButtonStyle(
+                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                        side: BorderSide(width: .5, color: Color(0Xffff4874)))),
+              ),
+            ),
           ),
-
-
-
           Divider(
-
             color: Colors.black12,
           ),
-           Expanded(
-
-             child: Container
-              (
-               padding: EdgeInsets.symmetric(vertical: 20),
-               alignment: Alignment.bottomCenter,
-                
-
-
-                      width: double.infinity,
-                      height: 400,
-
-
-
-
-
-      child: Text("New account"),
-                 ),
-           )
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.symmetric(vertical: 20),
+              alignment: Alignment.bottomCenter,
+              width: double.infinity,
+              height: 400,
+              child: Text("New account"),
+            ),
+          )
         ],
       ),
     );
