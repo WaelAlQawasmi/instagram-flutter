@@ -85,9 +85,10 @@ class _instaHomePageState extends State<instaHomePage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Icon(Icons.favorite_border_outlined),
-              Icon(Icons.chat_bubble_outline),
-              Icon(Icons.share_outlined),
+              IconButton(onPressed: (){}, icon:  Icon(Icons.favorite_border_outlined),splashColor: Colors.red,),
+              IconButton(onPressed: (){}, icon:  Icon(Icons.chat_bubble_outline) ,splashColor: Colors.red ),
+              IconButton(onPressed: (){}, icon:  Icon(Icons.share_outlined) ,splashColor: Colors.red),
+
             ],
           )
         ],

@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'taskes',
     debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
-      home:  Login(),
+      home:  instaHomePage(),
     );
   }
 }
