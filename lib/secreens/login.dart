@@ -25,22 +25,25 @@ class _LoginState extends State<Login> {
             width: 200,
           ),
           Container(
-            constraints: BoxConstraints(minWidth: 350, maxWidth: 400),
+            constraints: BoxConstraints(minWidth: 350, maxWidth: 370),
             margin: EdgeInsets.all(20),
             child: TextFormField(
               decoration: InputDecoration(
-                  icon: Icon(Icons.verified_user_outlined),
-                  border: OutlineInputBorder(),
+                  prefixIcon: Icon(Icons.verified_user_outlined),
+                  border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(20))),
                   hintText: "Email"),
+              
             ),
           ),
           Container(
-            constraints: BoxConstraints(minWidth: 350, maxWidth: 400),
+            constraints: BoxConstraints(minWidth: 350, maxWidth: 370),
             margin: EdgeInsets.all(20),
             child: TextFormField(
               decoration: InputDecoration(
-                  icon: Icon(Icons.password),
-                  border: OutlineInputBorder(),
+                  prefixIcon: Icon(Icons.password),
+                  
+                  border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(20))),
+                 
                   hintText: "password"),
             ),
           ),
@@ -80,7 +83,12 @@ class _LoginState extends State<Login> {
               alignment: Alignment.bottomCenter,
               width: double.infinity,
               height: 400,
-              child: Text("New account"),
+              child: TextButton(onPressed: (){},child: Text("New user?, signup",style: TextStyle(color: Color(0Xffff4874)),), style: ButtonStyle(
+
+              // overlayColor: MaterialStateColor.resolveWith((states) => Color(0XFFFCE4EC),)
+    overlayColor: MaterialStateProperty.all(Colors.transparent),
+
+              ),),
             ),
           )
         ],
