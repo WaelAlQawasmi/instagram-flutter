@@ -1,5 +1,6 @@
 # flutter_taskes
 ![home](/assest/img/loginNew.png)
+![home](/assest/img/signup.png)
 ![home](/assest/img/instagram.png)
 ![home](/assest/img/instaP.png)
 ![home](/assest/img/home.png)
