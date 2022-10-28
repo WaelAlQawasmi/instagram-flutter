@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_taskes/secreens/Signup.dart';
 import 'package:flutter_taskes/secreens/instaHomePage.dart';
 
 class Login extends StatefulWidget {
@@ -83,7 +84,11 @@ class _LoginState extends State<Login> {
               alignment: Alignment.bottomCenter,
               width: double.infinity,
               height: 400,
-              child: TextButton(onPressed: (){},child: Text("New user?, signup",style: TextStyle(color: Color(0Xffff4874)),), style: ButtonStyle(
+              child: TextButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context){
+                  return Signup();
+                }));
+              },child: Text("New user?, signup",style: TextStyle(color: Color(0Xffff4874)),), style: ButtonStyle(
 
               // overlayColor: MaterialStateColor.resolveWith((states) => Color(0XFFFCE4EC),)
     overlayColor: MaterialStateProperty.all(Colors.transparent),

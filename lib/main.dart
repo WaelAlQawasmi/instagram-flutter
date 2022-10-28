@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       title: 'taskes',
     debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
-      home: Signup(),
+      home: Home(),
     );
   }
 }

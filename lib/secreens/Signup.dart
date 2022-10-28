@@ -10,12 +10,15 @@ class Signup extends StatefulWidget {
 class _SignupState extends State<Signup> {
   var accountType = ['user', 'company', 'developer'];
   var selectedAcount;
+  bool isAccerpt = true;
+  var gender;
 
   @override
   Widget build(BuildContext context) {
     ;
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color(0Xffff4874),
         title: Text("Signup"),
       ),
       body: SingleChildScrollView(
@@ -56,7 +59,7 @@ class _SignupState extends State<Signup> {
               padding: EdgeInsets.all(5),
               decoration:
                   BoxDecoration(border: Border.all(color: Colors.black26)),
-              margin: EdgeInsets.symmetric(horizontal: 20),
+              margin: EdgeInsets.all(20),
               child: DropdownButton(
                 underline: Divider(
                   color: Colors.transparent,
@@ -78,6 +81,59 @@ class _SignupState extends State<Signup> {
                   print(selectedAcount);
                 },
                 value: selectedAcount,
+              ),
+            ),
+            Container(
+              child: CheckboxListTile(
+                selected: isAccerpt,
+                isThreeLine: true,
+                activeColor:Color(0Xffff4874),
+                checkColor: Colors.white,
+                title: Text("Accept Terms "),
+                subtitle: Text("you acceept the tarms"),
+                value: isAccerpt,
+                onChanged: (vale) {
+                  setState(() {
+                    isAccerpt = vale!;
+                  });
+                },
+              ),
+            ),
+            Row(children: [
+              Expanded(
+                child: Container(
+                    child: RadioListTile(
+                        value: "male",
+                        groupValue: gender,
+                        title: Text("male"),
+                        onChanged: (val) {
+                          setState(() {
+                            gender = val;
+                          });
+                        })),
+              ),
+              Expanded(
+                child: Container(
+                    child: RadioListTile(
+                        value: "F-male",
+                        groupValue: gender,
+                        title: Text("F-male"),
+                        onChanged: (val) {
+                          setState(() {
+                            gender = val;
+                          });
+                        })),
+              ),
+            ]),
+            Container(
+
+              padding: EdgeInsets.symmetric(horizontal: 20,vertical: 10),
+              margin: EdgeInsets.symmetric(vertical: 20),
+              decoration: BoxDecoration(
+                color:Color(0Xffff4874),
+                borderRadius: BorderRadius.circular(20)
+              ),
+              child: GestureDetector(child: Text("Submit",style: TextStyle(color: Colors.white, ),),
               ),
             )
           ],
