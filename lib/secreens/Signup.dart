@@ -87,7 +87,7 @@ class _SignupState extends State<Signup> {
               child: CheckboxListTile(
                 selected: isAccerpt,
                 isThreeLine: true,
-                activeColor:Color(0Xffff4874),
+                activeColor: Color(0Xffff4874),
                 checkColor: Colors.white,
                 title: Text("Accept Terms "),
                 subtitle: Text("you acceept the tarms"),
@@ -126,14 +126,30 @@ class _SignupState extends State<Signup> {
               ),
             ]),
             Container(
-
-              padding: EdgeInsets.symmetric(horizontal: 20,vertical: 10),
+              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               margin: EdgeInsets.symmetric(vertical: 20),
               decoration: BoxDecoration(
-                color:Color(0Xffff4874),
-                borderRadius: BorderRadius.circular(20)
-              ),
-              child: GestureDetector(child: Text("Submit",style: TextStyle(color: Colors.white, ),),
+                  color: Color(0Xffff4874),
+                  borderRadius: BorderRadius.circular(20)),
+              child: GestureDetector(
+                child: Text(
+                  "Submit",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+                onTap: () {
+                  final snackBar = SnackBar(
+                    backgroundColor: Colors.black26,
+                      content: Text("Successfully signed up!"),
+                      duration: Duration(seconds: 5),
+                      action: SnackBarAction(
+                        label: "un do",
+                        onPressed: () {},
+                      ),
+                      behavior: SnackBarBehavior.floating);
+                  ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                },
               ),
             )
           ],
