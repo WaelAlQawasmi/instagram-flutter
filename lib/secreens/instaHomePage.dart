@@ -9,9 +9,35 @@ class instaHomePage extends StatefulWidget {
 }
 
 class _instaHomePageState extends State<instaHomePage> {
+  int selectedBarItem=0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+
+        selectedItemColor: Colors.redAccent,
+        unselectedItemColor: Colors.black87,
+        currentIndex: selectedBarItem,
+        onTap: (index){
+          setState(() {
+            selectedBarItem=index;
+          });
+        },
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home,),label: "", ) ,
+          BottomNavigationBarItem(icon: Icon(Icons.search),label: ""),
+          BottomNavigationBarItem(icon: Icon(Icons.video_collection),label: ""),
+          BottomNavigationBarItem(icon: Icon(Icons.favorite_border_outlined),label: ""),
+          BottomNavigationBarItem(icon: ImageIcon(
+            AssetImage("assest/img/instalogo.png",),
+            color: Colors.black87,
+            size: 30,
+
+          ),label: "home"),
+
+        ],
+
+      ),
       appBar: AppBar(
 
         actions: [

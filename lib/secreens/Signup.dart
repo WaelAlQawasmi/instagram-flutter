@@ -138,9 +138,27 @@ class _SignupState extends State<Signup> {
                     color: Colors.white,
                   ),
                 ),
+                onLongPress: (){
+                  showDialog(context: context, builder: (context){
+                    return AlertDialog(
+                      actions: [
+                        OutlinedButton(onPressed: (){},style: OutlinedButton.styleFrom(
+                          backgroundColor: Color(0Xffff4874),
+                          primary: Colors.white
+                        ),child: Text("OK",)),
+                        ElevatedButton(onPressed: (){}, child: Text("Cancel"))
+                      ],
+                      actionsPadding: EdgeInsets.all(10),
+                      title: Text("signed up"),
+                      content: Text(
+                          "You already signed up!"),
+                    );
+                  });
+                }
+                ,
                 onTap: () {
                   final snackBar = SnackBar(
-                    backgroundColor: Colors.black26,
+                      backgroundColor: Colors.black26,
                       content: Text("Successfully signed up!"),
                       duration: Duration(seconds: 5),
                       action: SnackBarAction(
