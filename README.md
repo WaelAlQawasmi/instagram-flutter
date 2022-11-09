@@ -2,9 +2,9 @@
 ![home](/assest/img/loginNew.png)
 ![home](/assest/img/signup.png)
 ![home](/assest/img/snackbar.png)
-![home](/assest/img/instagram.png)
-![home](/assest/img/instaP.png)
 ![home](/assest/img/homeNew.png)
+![home](/assest/img/instaP.png)
+
 ![home](/assest/img/task1.png)
 A new Flutter project.
 
