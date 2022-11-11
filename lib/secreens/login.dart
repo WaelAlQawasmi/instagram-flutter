@@ -59,9 +59,7 @@ class _LoginState extends State<Login> {
             width: 150,
             child: OutlinedButton(
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return instaHomePage();
-                }));
+                Navigator.pushReplacementNamed(context, "InstaHome");
               },
               child: Text(
                 "Login",
