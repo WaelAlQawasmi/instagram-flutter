@@ -70,7 +70,7 @@ class _HomeState extends State<Home> {
       title: Text(taskName),
       leading: Icon(Icons.task),
       onTap: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context) {
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
           return taskClass;
         }));
       },

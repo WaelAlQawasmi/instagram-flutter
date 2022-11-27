@@ -19,6 +19,12 @@ class MyApp extends StatelessWidget {
       title: 'taskes',
     debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
+theme: ThemeData(
+  colorScheme: ThemeData().colorScheme.copyWith(
+    primary: Color(0Xffff4874),
+        secondary: Color(0Xffff4874)
+  )
+),
       home: Home(),
       routes: {
         'InstaHome':(context)=>instaHomePage(),

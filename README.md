@@ -1,7 +1,15 @@
 # flutter_taskes
+-This project is clone of instagram App , I bulid it from secratch, the app contain from number of
+pages, I used __flutter and dart__
 ![home](/assest/img/loginNew.png)
 ![home](/assest/img/signup.png)
 ![home](/assest/img/snackbar.png)
+
+![home](/assest/img/instagram.png)
+![home](/assest/img/instaProfile.png)
+![home](/assest/img/chat.png)
+![home](/assest/img/instaP.png)
+
 ![home](/assest/img/homeNew.png)
 ![home](/assest/img/instaP.png)
 
