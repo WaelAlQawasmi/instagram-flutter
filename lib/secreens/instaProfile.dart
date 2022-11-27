@@ -112,7 +112,7 @@ class _instaProfileState extends State<instaProfile> {
                 ),
                 Container(alignment: Alignment.topLeft,
                   child: Text("This is my profile, welcome to you in my profile"),),
-                ElevatedButton(onPressed: (){}, child: Text("Edit Profile"),style: ElevatedButton.styleFrom(minimumSize: Size.fromHeight(40),),)
+                ElevatedButton(onPressed: (){}, child: Text("Edit Profile"),style: ElevatedButton.styleFrom(minimumSize: Size.fromHeight(30),),)
               ],
             ),
           ),
