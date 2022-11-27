@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_taskes/secreens/chat.dart';
+import 'package:flutter_taskes/secreens/instaBar.dart';
 import 'package:flutter_taskes/secreens/instaProfile.dart';
 
 class instaHomePage extends StatefulWidget {
@@ -9,7 +11,7 @@ class instaHomePage extends StatefulWidget {
 }
 
 class _instaHomePageState extends State<instaHomePage> {
-  int selectedBarItem=0;
+  int selectedBarItem=2;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,40 +28,22 @@ class _instaHomePageState extends State<instaHomePage> {
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home,),label: "", ) ,
           BottomNavigationBarItem(icon: Icon(Icons.search),label: ""),
-          BottomNavigationBarItem(icon: Icon(Icons.video_collection),label: ""),
+          BottomNavigationBarItem(icon: Icon(Icons.video_collection),label: "",),
           BottomNavigationBarItem(icon: Icon(Icons.favorite_border_outlined),label: ""),
-          BottomNavigationBarItem(icon: ImageIcon(
-            AssetImage("assest/img/instalogo.png",),
+          BottomNavigationBarItem(icon: IconButton(
+            onPressed: (){  Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return instaProfile();
+            }));
+              },
+            icon:Image.asset("assest/img/instalogo.png",),
             color: Colors.black87,
-            size: 30,
 
           ),label: "home"),
 
         ],
 
       ),
-      appBar: AppBar(
-
-        actions: [
-          IconButton(
-            onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return instaProfile();
-              }));
-            },
-            icon: Icon(Icons.person),
-            color: Colors.black87,
-          )
-        ],
-
-
-        backgroundColor: Colors.white,
-        title: Text(
-          "instagrame 8t",
-          style:
-              TextStyle(fontFamily: 'FreehandRegular', color: Colors.black87),
-        ),
-      ),
+      appBar: instaBar(IsHaveBack: false,),
       body: Container(
         width: double.infinity,
         child: SingleChildScrollView(
@@ -136,3 +120,4 @@ class _instaHomePageState extends State<instaHomePage> {
     );
   }
 }
+
